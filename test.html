@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Заявка</title>
+<style>
+  body {
+    background-image: url('img/new-content-fon.jpeg');
+    background-size: cover; /* чтобы изображение занимало всю доступную область */
+    background-repeat: no-repeat; /* чтобы изображение не повторялось */
+    background-position: center; /* чтобы изображение располагалось по центру */
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Добавляем прозрачность к фону формы */
+    border-radius: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Добавляем прозрачность к фону текстового поля */
+    color: #fff;
+    border: 3px solid #555;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #008ba3;
+  }
+</style>
+</head>
+<body>
+
+<form id="whatsappForm">
+  <textarea id="messageInput" name="message" rows="5" cols="30" placeholder="Опишите ваш заказ здесь..."></textarea>
+  <button type="submit">Отправить</button>
+</form>
+
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Предотвращаем отправку формы
+  
+  var message = document.getElementById("messageInput").value; // Получаем значение из поля ввода
+  
+  // Формируем ссылку для WhatsApp с предварительно заполненным сообщением
+  var whatsappLink = "https://wa.me/номер_телефона_получателя?text=" + encodeURIComponent("Хочу заказать: " + message);
+  
+  // Открываем ссылку в новом окне (WhatsApp)
+  window.open(whatsappLink, "_blank");
+});
+</script>
+
+</body>
+</html>

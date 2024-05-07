@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+  user-select: none;
+}
+/* navbar */
+.qwe a { 
+    color: aliceblue; 
+ 
+} 
+ 
+.pp { 
+    margin: 15px 15px; 
+    
+} 
+ 
+.qwe a:hover { 
+    color: rgb(95, 95, 95); 
+     
+ 
+} 
+.qwe { 
+    border-radius: 15px; 
+    background-image:linear-gradient( rgba(41, 41, 41, 0.6), rgba(41, 41, 41, 0.6));
+} 
+.dd { 
+    padding-top: 20px; 
+    background-image: url(../img/main-fon.mp4); 
+    height: 100vh; 
+    background-position: 100%; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+
+
+
+
+
+.content {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/new-content-fon.jpeg);
+    background-size: cover;
+    padding: 2.5rem;
+    width: 100%;
+    background-color: rgb(63, 63, 63);
+    margin: 0;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    height: 65vh;
+    background-color: rgb(43, 43, 43);
+    margin: 0px;
+    border-radius: 20px;
+    padding: 0px;
+  }
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.text-content {
+    color: rgb(214, 214, 214);
+    text-align: justify;
+}
+.asd {
+    padding: 1.5rem;
+}
+.container h2 {
+    margin-bottom: 1.5rem;
+}
+
+.left p {
+    width: 80%;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.right img {
+    width: 300px;
+    float: right;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    border-radius: 20%;
+}
+.created {
+    float: right;
+    margin-top: 1.5rem;
+    font-family: 'Courier New';
+    font-size: 18px;
+}
+
+
+.dfg {
+  margin-bottom: -24px;
+}
+.carusel {
+  background-color: black;
+}
+
+.container .h2collab {
+  margin-bottom: 1.5rem;
+  margin-left: 22.6rem;
+
+}
+.right p {
+  width: 70%;
+  font-size: 26px;
+  font-weight: 300;
+  margin-left: 10rem;
+}
+
+.left img {
+  width: 300px;
+  float: left;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 20%;
+}
+.spisok {
+  margin-right: 32rem;
+}
+
+
+/* footer */
+footer a {
+  text-decoration: none;
+  color: rgb(144, 144, 144);
+}
+footer a:hover {
+  color: rgb(181, 181, 181);
+}
+footer .oki {
+  color: rgb(114, 114, 114);
+  font-size: 14px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+   width: 10px; /* ширина нового скроллбара */
+}  
+::-webkit-scrollbar-track {
+   background: #383838; /* цвет фона у дорожки */  
+}
+::-webkit-scrollbar-thumb {
+   background: #585858; /* цвет фона у дорожки */
+   border-radius: 9999px; /* скругление углов */
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #808080; /* ползунок меняет цвет при наведении */
+}
+
+
+
+
+@media screen and (max-width:450px) {
+  .right img {
+    width: 230px;
+    margin: 0;
+  }
+  .left img {
+    width: 230px;
+    margin: 0;
+  }
+  .left .created {
+    font-size: 13px;
+    text-align: justify;
+  }
+  .created .spisok{
+    margin-left: 7rem;
+  }
+
+}
+
+@media screen and (max-width:700px ) {
+  .dd {
+    background-image: url(../img/main-phone.mp4);
+  }
+  h2 {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .right img {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    float: none;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .left p{
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .reveal {
+    height: 100%;
+  }
+  .created {
+    font-size: 15px;
+    margin-left: 3rem;
+    margin-top: -2.5rem;
+  }
+  .carusel img {
+    width: 150px;
+  }
+  .left img {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    float:none;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .right p{
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 0rem;
+    margin: 0rem;
+  }
+  .right .created {
+    font-size: 15px;
+    margin-left: 3rem;
+    margin-top: -2.5rem;
+    float: none;
+  }
+  .container .h2collab {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+  
+  }
+  .spisok {
+    margin: 0;
+    margin-left: 10rem;
+  }
+  .cdr {
+    text-align: center;
+  }
+  
+}
